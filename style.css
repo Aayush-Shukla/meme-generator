@@ -1,5 +1,12 @@
-canvas{
+body{
+    background-color: lightcyan;
+}
+
+.tools{
+    
+    
     position: absolute;
-    left: 300px;
-    top: 50px;
+    top: 780px;
+    left: 39%;
+
 }

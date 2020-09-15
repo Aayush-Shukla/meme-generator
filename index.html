@@ -9,17 +9,62 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="container">
+
+<div class="row">
+    <h1 class="center">Meme Generator</h1>
+</div>
+
+<div class="row">
+    
+
+<div class="col">        <canvas id="canvas" width="640" height="640"></canvas></div>
+
+    </div>  
+
+    <div class="tools">
 
 
-        <canvas id="canvas" width="640" height="640"></canvas>
+        <div class="row">
 
-        <input type="text" id="text1">
-        <input type="text" id="text2">
+            <div class="col">
+                <button class="btn blue" onclick="prev()">Prev</button></div>
 
 
+                <div class="col">
+                    <button class="btn black" onclick="toggle()">Colour Toggle</button>
+                </div>
+
+
+            <div class="col">
+                <button class="btn blue" onclick="next()">Next</button>
+            </div>
+
+        </div>
+<div class="row">
+
+
+    <div class="col input-field">
+        <label for="t1">First Text</label>
+    <input type="text" name=t1 id="text1"></div>
+    <div class="col input-field">
+        <label for="t2">Second Text</label>
+        
+        <input type="text" name=t2 id="text2"></div>
+
+</div>
+</div>
+       
+
+</div>
         
         <script src="script.js" async defer></script>
     </body>
