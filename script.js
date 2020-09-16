@@ -3,7 +3,7 @@ let ctx=canvas.getContext('2d');
 var memeData;
 var meme=new Image()
 var text=[]
-offsetX=canvas.width/2-320
+offsetX=320
 var selected=-1
 index=0
 var colors=['white','black']
@@ -156,6 +156,8 @@ function text2(e){
         startY=parseInt(e.clientY-offsetY);
         text[selected].x=startX
         text[selected].y=startY
+
+        console.log(text[selected].x,text[selected].y,startX,startY)
 
         DrawMeme()
 
