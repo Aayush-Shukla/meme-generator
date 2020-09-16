@@ -3,13 +3,13 @@ let ctx=canvas.getContext('2d');
 var memeData;
 var meme=new Image()
 var text=[]
-offsetX=320
+offsetX=window.innerWidth/2-250
 var selected=-1
 index=0
 var colors=['white','black']
 
 offsetY=130
-canvas.style = "position:absolute; left: 50% ;top:130px; margin-left: -320px;";
+canvas.style = "position:absolute; left: 50% ;top:130px; margin-left: -300px;";
 
 
 let url='https://api.imgflip.com/get_memes'
